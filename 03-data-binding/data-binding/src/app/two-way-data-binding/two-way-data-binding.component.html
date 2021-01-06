@@ -1,0 +1,43 @@
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text"
+      [value]="nome"
+      (input)="nome = $event.target.value"
+      />
+
+
+    <!--Usando ngModel (Necessário importar ) Angular 7
+      import { FormsModule } from '@angular/forms';
+    @NgModule({
+      imports: [
+        [...]
+        FormsModule
+      ],
+      [...]
+    })
+      -->
+      <input type="text"
+      [ngModel]="nome"
+      (ngModelChange)="nome = $event"
+      />
+
+
+      <!--Utilizando two-way-data-binding-->
+      <input type="text" [(ngModel)]="nome">
+     <p>Você digitou: {{ nome }}</p>
+
+     <!--Two-way data-binding com objeto-->
+     <input type text="" [(ngModel)]="pessoa.nome">
+     <input type text="" [(ngModel)]="pessoa.idade">
+     <input type="text" [(ngModel)]="pessoa.end.nome">
+     <p>Meu nome é <b>{{ pessoa.nome }}</b> 
+      e tenho <b>{{pessoa.idade}}</b> anos 
+      e o meu endereço é <b>{{ pessoa.end.nome }}</b></p>
+     <div>
+
+     </div>
+    </div>
+  </article>
+</section>

@@ -21,6 +21,7 @@
 
 
 <article>
+  <!--Class binding e Property Binding-->
   <h3>Class e Style Binding</h3>
   <div>
     Selecione uma classe
@@ -31,10 +32,14 @@
       <option value="alert-danger">Erro</option>
     </select>
     <br>
+
+      <!--Interpolation-->
       <div class="alert {{ classe.value }}" role="alert">
         Texto colorido conforme valor do combobox
       </div>
       <br>
+
+      <!--Property Binding-->
       <div class="alert" role="alert"
         [class.alert-success]="classe.value == 'alert-success'">
         
@@ -52,6 +57,7 @@
         Erro
       </div>
 
+      <!--Property binding with class style-->
     <div class="alert alert-danger" role="alert"
       [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'"
       >Esse texto somente aparece em caso de erro.

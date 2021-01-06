@@ -22,6 +22,12 @@ export class DataBindingComponent implements OnInit {
 
   nomeDoCurso: string = 'Angular';
 
+  valorInicial: number = 15;
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
+  }
+
   constructor() { }
 
   ngOnInit() {

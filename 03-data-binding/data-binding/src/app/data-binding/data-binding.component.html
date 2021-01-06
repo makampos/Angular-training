@@ -69,7 +69,9 @@
       <div class="col">
         <h3>Componente reutilizavel</h3>   
           <app-curso [nome]="nomeDoCurso"></app-curso>
-
+          <contador [valor]="valorInicial"
+          (mudouValor)="onMudouValor($event)"
+          ></contador>
       </div>
     </div>
   </div>

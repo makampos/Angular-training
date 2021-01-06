@@ -7,6 +7,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
     DataBindingComponent,
     EventBindingComponent,
     TwoWayDataBindingComponent,
-    InputPropertiesComponent
+    InputPropertiesComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,

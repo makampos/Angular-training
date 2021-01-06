@@ -20,6 +20,8 @@ export class DataBindingComponent implements OnInit {
     return true;
   }
 
+  nomeDoCurso: string = 'Angular';
+
   constructor() { }
 
   ngOnInit() {

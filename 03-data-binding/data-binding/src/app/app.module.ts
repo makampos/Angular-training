@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { InputPropertiesComponent } from './input-properties/input-properties.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
     EventBindingComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    InputPropertiesComponent
   ],
   imports: [
     BrowserModule,
